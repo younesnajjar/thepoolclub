@@ -1,0 +1,21 @@
+[debug] [2022-04-12T05:38:42.603Z] ----------------------------------------------------------------------
+[debug] [2022-04-12T05:38:42.605Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2022-04-12T05:38:42.605Z] CLI Version:   10.1.4
+[debug] [2022-04-12T05:38:42.605Z] Platform:      linux
+[debug] [2022-04-12T05:38:42.605Z] Node Version:  v16.14.2
+[debug] [2022-04-12T05:38:42.606Z] Time:          Tue Apr 12 2022 05:38:42 GMT+0000 (GMT)
+[debug] [2022-04-12T05:38:42.606Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-12T05:38:42.610Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-12T05:38:42.610Z] > authorizing via signed-in user (younes.najjar.96@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/younes/Documents/fun/sakai-ng
+

@@ -1,0 +1,21 @@
+.labeled-avatar-container {
+    background: var(--gray-200);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    .label-container {
+        display: flex;
+    }
+    .sub-label-container {
+        display: flex;
+        justify-content: space-between;
+        > div {
+            display: flex;
+            align-items: center;
+            strong {
+                font-size: 13px;
+                margin: 0 5px;
+            }
+        }
+    }
+}

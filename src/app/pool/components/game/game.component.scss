@@ -1,0 +1,39 @@
+.game-container {
+    margin: 0;
+    position: relative;
+    .vs-text {
+        height: 67%;
+        font-weight: bold;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        background: var(--bluegray-400);
+        color: var(--cyan-50);
+        border-radius: 6px;
+    }
+    .table-number {
+        margin-top: 3%;
+        font-weight: bold;
+        height: 30%;
+        background: var(--bluegray-800);
+        color: var(--cyan-50);
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .player-box {
+        display: flex;
+    }
+    .end-button {
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        min-width: 150px;
+        background: var(--blue-700);
+        border-color: var(--blue-700);
+        transform: translate(-50%, 0);
+    }
+}
