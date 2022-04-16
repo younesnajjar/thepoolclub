@@ -4,7 +4,7 @@ export const environment = {
     GOOGLE_MAPS_API_KEY: 'AIzaSyDpgQMpcfx1QU-8SM-ljcgjG4xrYtIYby4',
     max_menu_notifs: 7,
     // base_url: 'http://192.168.101.38:5006',
-    base_url: 'http://localhost:3000/',      // testing errors handelers
+    base_url: 'http://localhost:3000',      // testing errors handelers
     multi_user: false,
     enable_push_notification: false,
     firebase: {
