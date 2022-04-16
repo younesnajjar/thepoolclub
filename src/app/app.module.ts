@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {BrowserModule} from '@angular/platform-browser';
 import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -144,6 +144,8 @@ import {AccessComponent} from './components/access/access.component';
 import {environment} from "../environments/environment";
 import {AngularFireModule} from "angularfire2";
 import {AngularFirestoreModule} from "angularfire2/firestore";
+import {SharedModule} from "./shared/shared.module";
+import {AppHttpInterceptor} from "./shared/services/http-interceptor";
 
 
 @NgModule({
@@ -236,7 +238,8 @@ import {AngularFirestoreModule} from "angularfire2/firestore";
         TreeTableModule,
         VirtualScrollerModule,
         AppCodeModule,
-        StyleClassModule
+        StyleClassModule,
+        SharedModule
     ],
     declarations: [
         AppComponent,
@@ -283,6 +286,11 @@ import {AngularFirestoreModule} from "angularfire2/firestore";
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},
+        {
+            provide: HTTP_INTERCEPTORS,
+            useClass: AppHttpInterceptor,
+            multi: true,
+        },
         CountryService, CustomerService, EventService, IconService, NodeService,
         PhotoService, ProductService, MenuService, ConfigService
     ],
