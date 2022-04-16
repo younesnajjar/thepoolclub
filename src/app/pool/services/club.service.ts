@@ -6,13 +6,11 @@ import {AngularFirestore} from "angularfire2/firestore";
 })
 export class ClubService {
 
-    constructor(private db: AngularFirestore) {
-        console.log('hello');
-        db.collection('clubs').valueChanges().subscribe((response) => {
-            console.log('reponse ', response);
-        }, err => console.log(err));
-    }
+    constructor(private db: AngularFirestore) {}
     getData() {
 
+    }
+    getClubWaitingList() {
+        return this.db.collection('/clubs').doc('/2JRrI2LnnzjGyoZDJ5jt').valueChanges();
     }
 }

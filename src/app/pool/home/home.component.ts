@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
     config: AppConfig;
 
     constructor(private productService: ProductService, public configService: ConfigService, private clubService: ClubService) {
-        clubService
+
     }
 
     ngOnInit() {

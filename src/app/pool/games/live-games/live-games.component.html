@@ -1,0 +1,12 @@
+<div class="grid">
+    <div class="col-12 lg:col-4">
+        <div class="card">
+            <h5>OrderList</h5>
+            <p-orderList [value]="club?.waitingList" header="Players" dragdrop="true" [listStyle]="{'height':'250px'}">
+                <ng-template let-player pTemplate="item">
+                    <div>{{player.firstName}}</div>
+                </ng-template>
+            </p-orderList>
+        </div>
+    </div>
+</div>
